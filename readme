@@ -1,0 +1,12 @@
+sudo apt-get install pkg-config
+sudo apt-get install libfreetype-dev
+sudo apt-get install libpng-dev
+
+apt install curl git python3-pip pkg-config 
+git clone https://github.com/atlury/movie-recommender-1.git
+cd movie-recommender-1
+#DO NOT RUN sh setup.sh
+pip3 install -r requirements.txt (delete pywin32 and pywinpty==1.1.6)
+pip3 install streamlit 
+#UPLOAD similarity.pkl
+streamlit run app.py
